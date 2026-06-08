@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Kingsley Kotey avatar</title>
+  <desc id="desc">Hand-drawn KK initials on paper.</desc>
+  <rect width="120" height="120" fill="#fbf6e6"/>
+  <path d="M14 18 C38 8 82 9 106 19 L101 103 C73 111 39 110 18 101 Z" fill="#f3ecda" stroke="#203a63" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M30 81 L30 35 M31 58 L57 35 M35 58 L62 83" fill="none" stroke="#1a1814" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M67 81 L67 35 M68 58 L94 35 M72 58 L98 83" fill="none" stroke="#1a1814" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 24 C38 20 55 19 76 21" fill="none" stroke="#b65b3a" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M31 98 C47 103 73 103 92 97" fill="none" stroke="#203a63" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+</svg>

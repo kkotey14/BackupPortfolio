@@ -1,0 +1,159 @@
+.resume-beacon {
+  position: fixed;
+  right: 36px;
+  top: 300px;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #203a63;
+  background: #fbf6e6;
+  color: #203a63;
+  padding: 8px 12px;
+  font-family: var(--font-hand);
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 999px;
+  box-shadow: 4px 5px 0 rgba(32, 58, 99, .18);
+  cursor: pointer;
+  transform: rotate(-2deg);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.resume-beacon:hover {
+  transform: rotate(1deg) translateY(-2px);
+  box-shadow: 5px 7px 0 rgba(32, 58, 99, .2);
+}
+
+.beacon-icon {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #203a63;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6d85f;
+  font-family: var(--font-marker);
+  font-size: 12px;
+  color: #1a1814;
+  position: relative;
+}
+
+.beacon-icon::before,
+.beacon-icon::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px dashed rgba(32, 58, 99, .45);
+  border-radius: 50%;
+  animation: beacon-pulse 2.4s infinite;
+}
+
+.beacon-icon::after {
+  inset: -14px;
+  animation-delay: .7s;
+}
+
+.resume-beacon-card {
+  position: fixed;
+  right: 32px;
+  top: 372px;
+  z-index: 92;
+  width: min(360px, calc(100vw - 32px));
+  background: #fbf6e6;
+  border: 2px solid #203a63;
+  color: #203a63;
+  padding: 24px 24px 20px;
+  font-family: var(--font-hand);
+  box-shadow: 10px 12px 0 rgba(32, 58, 99, .14);
+  clip-path: polygon(1% 0, 100% 2%, 98% 100%, 0 97%);
+  transform: rotate(.8deg);
+}
+
+.resume-beacon-card h2 {
+  font-family: var(--font-marker);
+  font-size: 24px;
+  color: #1a1814;
+  margin: 2px 0 8px;
+}
+
+.resume-beacon-card p,
+.resume-beacon-card li {
+  font-size: 19px;
+  line-height: 1.18;
+}
+
+.resume-beacon-card ul {
+  margin: 14px 0 16px;
+  padding-left: 20px;
+}
+
+.beacon-kicker {
+  color: #b65b3a;
+  font-weight: 700;
+}
+
+.resume-beacon-close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #203a63;
+  border-radius: 50%;
+  background: #fbf6e6;
+  color: #203a63;
+  font-family: var(--font-marker);
+  cursor: pointer;
+}
+
+.beacon-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.beacon-actions a,
+.beacon-actions button {
+  border: 1.5px solid #203a63;
+  background: #f6d85f;
+  color: #203a63;
+  text-decoration: none;
+  font-family: var(--font-marker);
+  font-size: 12px;
+  padding: 7px 9px;
+  box-shadow: 2px 2px 0 rgba(32, 58, 99, .3);
+  cursor: pointer;
+}
+
+.beacon-status {
+  min-height: 20px;
+  margin-top: 12px;
+  color: #b65b3a;
+  font-weight: 700;
+}
+
+@keyframes beacon-pulse {
+  0% {
+    opacity: .75;
+    transform: scale(.72);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(1.35);
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-beacon {
+    right: 16px;
+    top: 86px;
+    font-size: 16px;
+  }
+
+  .resume-beacon-card {
+    right: 16px;
+    top: 146px;
+  }
+}
