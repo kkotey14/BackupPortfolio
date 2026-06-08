@@ -23,8 +23,9 @@
     </ul>
     <div class="beacon-actions">
       <a href="https://kkotey.com" target="_blank" rel="noopener noreferrer">site</a>
+      <a href="/KoteyResumeSWE.pdf" target="_blank" rel="noopener noreferrer">resume</a>
       <a href="https://github.com/kkotey14" target="_blank" rel="noopener noreferrer">github</a>
-      <a href="https://linkedin.com/in/kingsley-kotey-476649278" target="_blank" rel="noopener noreferrer">linkedin</a>
+      <a href="https://www.linkedin.com/in/kingsley-kotey-476649278/" target="_blank" rel="noopener noreferrer">linkedin</a>
       <button type="button" data-copy-email>copy contact</button>
     </div>
     <p class="beacon-status" role="status" aria-live="polite"></p>
